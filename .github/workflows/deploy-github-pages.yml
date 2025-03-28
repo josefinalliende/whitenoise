@@ -26,6 +26,8 @@ jobs:
           bun-version: latest
 
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+        env:
+            NODE_OPTIONS: "--max_old_space_size=8192"
         with:
           install_command: bun install
           build_command: bun build-storybook
