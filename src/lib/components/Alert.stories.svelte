@@ -1,6 +1,5 @@
 <script lang="ts" module>
 import { defineMeta } from "@storybook/addon-svelte-csf";
-import { fn } from "@storybook/test";
 import Alert from "./Alert.svelte";
 
 const { Story } = defineMeta({
@@ -45,7 +44,7 @@ const { Story } = defineMeta({
         },
     },
     args: {
-        acceptFn: fn(),
+        acceptFn: () => {},
         showAlert: true,
     },
 });
