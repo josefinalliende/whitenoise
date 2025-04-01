@@ -1,6 +1,7 @@
 <script lang="ts" module>
 import { defineMeta } from "@storybook/addon-svelte-csf";
-import { CaretLeft, PlusCircle } from "phosphor-svelte";
+// import CaretLeft from "phosphor-svelte/lib/CaretLeft";
+// import PlusCircle from "phosphor-svelte/lib/PlusCircle";
 import HeaderToolbar from "./HeaderToolbar.svelte";
 
 const { Story } = defineMeta({
@@ -43,7 +44,7 @@ const { Story } = defineMeta({
   <HeaderToolbar alwaysShowCenter={true}>
     {#snippet left()}
       <button class="flex flex-row gap-0.5 items-end">
-        <CaretLeft size={24} />
+        <!-- <CaretLeft size={24} /> -->
         <span class="text-xl font-medium">Back</span>
       </button>
     {/snippet}
@@ -53,7 +54,7 @@ const { Story } = defineMeta({
     {#snippet right()}
       <div>
         <button class="p-2 -mr-2">
-          <PlusCircle size={30} />
+          <!-- <PlusCircle size={30} /> -->
         </button>
       </div>
     {/snippet}
@@ -63,7 +64,7 @@ const { Story } = defineMeta({
   <HeaderToolbar alwaysShowCenter={false}>
     {#snippet left()}
       <button class="flex flex-row gap-0.5 items-end">
-        <CaretLeft size={24} />
+        <!-- <CaretLeft size={24} /> -->
         <span class="text-xl font-medium">Back</span>
       </button>
     {/snippet}
@@ -73,7 +74,7 @@ const { Story } = defineMeta({
     {#snippet right()}
       <div>
         <button class="p-2 -mr-2">
-          <PlusCircle size={30} />
+          <!-- <PlusCircle size={30} /> -->
         </button>
       </div>
     {/snippet}
@@ -84,7 +85,7 @@ const { Story } = defineMeta({
   <HeaderToolbar alwaysShowCenter={true}>
     {#snippet left()}
       <button class="flex flex-row gap-0.5 items-end">
-        <CaretLeft size={24} />
+        <!-- <CaretLeft size={24} /> -->
         <span class="text-xl font-medium">Back</span>
       </button>
     {/snippet}
@@ -96,7 +97,7 @@ const { Story } = defineMeta({
     {#snippet right()}
       <div>
         <button class="p-2 -mr-2">
-          <PlusCircle size={30} />
+          <!-- <PlusCircle size={30} /> -->
         </button>
       </div>
     {/snippet}
